@@ -19,7 +19,7 @@ class CashRegister
   def apply_discount
     if @discount > 0
       @total *= 1 - @discount / 100
-      "After the discount, the total comes to $#{@total.to_i}."
+      "After the discount, the total comes to $#{@total.to_i}." #this wouldn't return the total precisely if there are decimal places
     else
       "There is no discount to apply."
     end
